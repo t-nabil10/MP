@@ -373,12 +373,46 @@
             font-size: 0.9rem;
         }
 
+        /* BOUTON EN BAS DE PAGE */
+        .open-link-container {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .open-link-btn {
+            background: linear-gradient(135deg, #16a34a, #15803d);
+            color: #f9fafb;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .open-link-btn i {
+            font-size: 1rem;
+        }
+
+        .open-link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(22, 163, 74, 0.4);
+            background: linear-gradient(135deg, #15803d, #166534);
+        }
+
         footer {
             text-align: center;
             padding: 10px 10px 12px;
             background: #0f172a;
             color: #e5e7eb;
             font-size: 0.75rem;
+            margin-top: 20px;
         }
 
         @media (max-width: 640px) {
@@ -416,6 +450,11 @@
             .divisibility-test {
                 grid-template-columns: 1fr;
             }
+
+            .open-link-btn {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
         }
     </style>
 </head>
@@ -435,6 +474,7 @@
         </header>
         
         <div class="content">
+            
             <!-- Chapitre 3: Les diviseurs -->
             <section class="section">
                 <h2><i class="fas fa-divide"></i> Chapitre 3: Les diviseurs</h2>
@@ -568,9 +608,8 @@
                     </div>
                 </div>
             </section>
-        </div>
-        
-        <!-- BOUTON À LA FIN DE LA PAGE -->
+
+            <!-- BOUTON À LA FIN DE LA PAGE -->
             <div class="open-link-container">
                 <button class="open-link-btn" onclick="openHtmlPage()">
                     <i class="fas fa-window-restore"></i>
