@@ -505,11 +505,15 @@
                     </div>
                 </div>
             </section>
-
-            <div class="chapter-divider">
-                <span>Chapitre 3</span>
+        </div>
+        
+        <!-- BOUTON À LA FIN DE LA PAGE -->
+            <div class="open-link-container">
+                <button class="open-link-btn" onclick="openHtmlPage()">
+                    <i class="fas fa-window-restore"></i>
+                    Si la page ne s'affiche pas correctement : Cliquez ici
+                </button>
             </div>
-
         </div>
         
         <footer>
@@ -529,6 +533,12 @@
                 answer.classList.add('show');
                 button.innerHTML = '<i class="fas fa-eye-slash"></i> Cacher la réponse';
             }
+        }
+
+        function openHtmlPage() {
+            // Remplacez cette URL par le lien vers votre page si nécessaire
+            const url = "#";
+            window.open(url, "_blank", "noopener,noreferrer");
         }
     </script>
 </body>
